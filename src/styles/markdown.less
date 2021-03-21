@@ -1,5 +1,12 @@
 @import './atom-one-light.css';
 
+
+@font-face {
+  font-family:'MONACO';
+  src: url("../assets/fonts//MONACO.TTF");
+} 
+
+
 // ide
 .CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
   background: none !important;
@@ -7,7 +14,8 @@
 
 .article-detail {
   margin: 0 auto;
-  font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  // font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family:'MONACO'!important;
   color: #555;
   line-height: 2;
   img {
@@ -20,7 +28,8 @@
 
   pre,
   code {
-    font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', monospace;
+    font-family:'MONACO'!important;
+    // font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', monospace;
   }
   code {
     padding: 2px 4px;
@@ -28,10 +37,12 @@
     color: #ff502c;
     background: #fff5f5;
     border-radius: 3px;
-    font-size: 13px;
+    font-size: 14px;
   }
   pre {
-    padding: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    position: relative;
     overflow: auto;
     margin: 20px 0;
     font-size: 13px;
@@ -39,6 +50,18 @@
     background: #f7f7f7;
     line-height: 1.6;
   }
+  pre:after {
+    position: absolute !important;
+    top: .5em !important;
+    left: .7rem !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background: #fc625d !important;
+    box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b !important;
+    content: " " !important;
+  }
+  
   pre code {
     padding: 0;
     color: #555;

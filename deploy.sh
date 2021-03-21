@@ -11,7 +11,7 @@ set -e
 
 git init
 git add -A
-git commit -m 'update'
+git commit -m '修改字体'
 
 # 如果你想要部署到 https://<USERNAME>.github.io
  git push -f git@github.com:fang-kang/reactBlog.git master

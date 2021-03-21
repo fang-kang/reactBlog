@@ -19,6 +19,10 @@ const skills = [
     rate: 4
   },
   {
+    label: '熟悉Nuxt.js进行SSR渲染',
+    rate: 4
+  },
+  {
     label: '熟练使用 Webpack 打包工具，熟悉常用工程化和模块化方案',
     rate: 4
   },
