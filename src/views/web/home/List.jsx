@@ -18,7 +18,7 @@ const ArticleList = props => {
   return (
     <ul className='app-home-list'>
       {list.map(item => (
-        <div>
+        <div key={item.id}>
           {item.top ? (
             <div className='button-content-right'>置顶</div>
           ) : (<div />)}
@@ -33,7 +33,7 @@ const ArticleList = props => {
             <div
               onClick={() => jumpTo(item.id)}
               className='article-detail content'
-              dangerouslySetInnerHTML = {{__html: item.content}}>
+              dangerouslySetInnerHTML={{ __html: item.content }}>
             </div>
 
             <div className='list-item-others'>
